@@ -2,52 +2,206 @@
 title: "Project"
 ---
 
-Last trimester, I have done project about Object Oriented Programming that make the game.
+Last trimester, I completed a project on Object-Oriented Programming that involved creating a game.
 
-Below is some code from the project:
+Here are some images from the project:
+
+![Game Menu](image/game menu.png)
+
+![Game Scene 1](image/game scene 1.png)
+
+![Game Scene 2](image/game scene 2.png)
+
+Here are some codes from the project:
 
 ``` java
+package com.mygdx.entity;
+
+
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.math.Vector2;
+import com.badlogic.gdx.math.MathUtils;
+import com.badlogic.gdx.math.Rectangle;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
+import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.GL20;
+
+
 public abstract class Entity 
 {
-    // Attributes
-    private int entityid;
-    private float posx;
-    private float posy;
-    private float speed;
-    private Texture texture;
-    private float width;
-    private float height;
-    private Vector2 direction;
-    private Rectangle boundingBox;
-    private SpriteBatch batch;
-    private ShapeRenderer shape;
+	// Attributes
+	private int entityid;
+	private float posx;
+	private float posy;
+	private float speed;
+	private Texture texture;
+	private float width;
+	private float height;
+	private Vector2 direction;
+	private Rectangle boundingBox;
+	private SpriteBatch batch;
+	private ShapeRenderer shape;
 
-    // Constructor
-    public Entity(int entityid, float posx, float posy, float speed, String texturePath, float width, float height) 
-    {
-        this.entityid = entityid;
-        this.posx = posx;
-        this.posy = posy;
-        this.speed = speed;
-        this.texture = new Texture (Gdx.files.internal(texturePath));
-        this.width = width;
-        this.height = height;
-        float randomAngle = MathUtils.random(0f, MathUtils.PI2);
+	// Constructor
+	public Entity(int entityid, float posx, float posy, float speed, String texturePath, float width, float height) 
+	{
+		this.entityid = entityid;
+		this.posx = posx;
+		this.posy = posy;
+		this.speed = speed;
+		this.texture = new Texture (Gdx.files.internal(texturePath));
+		this.width = width;
+		this.height = height;
+		float randomAngle = MathUtils.random(0f, MathUtils.PI2);
         this.direction = new Vector2(MathUtils.cos(randomAngle), MathUtils.sin(randomAngle));
-        this.boundingBox = new Rectangle(this.getPosx(), this.getPosy(), this.getWidth(), this.getHeight());
-        this.batch = new SpriteBatch();
-        this.shape = new ShapeRenderer();
-    }
+		this.boundingBox = new Rectangle(this.getPosx(), this.getPosy(), this.getWidth(), this.getHeight());
+		this.batch = new SpriteBatch();
+		this.shape = new ShapeRenderer();
+	}
 
-    // Method: Set Entity ID
-    public void setEntityid(int entityid)
-    {
-        this.entityid = entityid;
+	// Method: Set Entity ID
+	public void setEntityid(int entityid)
+	{
+		this.entityid = entityid;
+	}
+	
+	// Method: Get Entity ID
+	public int getEntityid()
+	{
+		return entityid;
+	}
+	
+	// Method: Set Entity X Position 
+	public void setPosx(float posx) 
+	{
+		this.posx = posx;
+	}
+	
+	// Method: Get Entity X Position 
+	public float getPosx() 
+	{
+		return this.posx;
+	}
+	
+	// Method: Set Entity Y Position 
+	public void setPosy(float posy) 
+	{
+		this.posy = posy;
+	}
+	
+	// Method: Get Entity Y Position 
+	public float getPosy() 
+	{
+		return this.posy;
+	}
+	
+	// Method: Set Entity Speed 
+	public void setSpeed(float speed) 
+	{
+		this.speed = speed;
+	}
+		
+	// Method: Get Entity Speed 
+	public float getSpeed() 
+	{
+		return this.speed;
+	}
+	
+	// Method: Set Entity Texture
+	public void setTexture(Texture texture) 
+	{
+		this.texture = texture;
+	}
+	
+	// Method: Get Entity Texture
+	public Texture getTexture() 
+	{
+		return this.texture;
+	}
+	
+	// Method: Set Entity Texture Width
+	public void setWidth(float width)
+	{
+		this.width = width;
+	}
+		
+	// Method: Get Entity Texture Width
+	public float getWidth()
+	{			
+		return this.width;		
+	}
+		
+	// Method: Set Entity Texture Height
+	public void setHeight(float height)
+	{
+		this.height = height;
+	}
+	
+	// Method: Get Entity Texture Height
+	public float getHeight()
+	{
+		return this.height;
+	}
+	
+	// Method: Set Entity Direction
+	public void setDirecction(Vector2 direction)
+	{
+	   this.direction = direction;
+	}
+	
+	// Method: Get Entity Direction
+	public Vector2 getDirection()
+	{
+		return this.direction;
+	}
+	
+	// Method: Set Entity Bounding Box
+	public void setBoundingBox(float posx, float posy)
+	{
+		this.boundingBox = new Rectangle(this.posx, this.posy, this.width, this.height);
+	}
+	
+	// Method: Get Entity Bounding Box
+	public Rectangle getBoundingBox()
+	{
+		return this.boundingBox;
+	}
+	
+	// Method: Draw Entity
+	public void draw() 
+	{
+		batch.begin();
+        	batch.draw(getTexture(), getPosx(), getPosy(), getWidth(), getHeight());
+        batch.end();
+        Gdx.gl.glEnable(GL20.GL_BLEND);
+        Gdx.gl.glBlendFunc(GL20.GL_SRC_ALPHA, GL20.GL_ONE_MINUS_SRC_ALPHA);
+        shape.begin(ShapeRenderer.ShapeType.Line);
+        	shape.setColor(new Color(256, 0, 0, 0));
+        	shape.rect(boundingBox.x, boundingBox.y, boundingBox.width, boundingBox.height);
+    		if (boundingBox != null) {
+                boundingBox.setPosition(this.posx, this.posy);
+            } 
+        shape.end();
+        Gdx.gl.glDisable(GL20.GL_BLEND);
+	}
+	
+	// Method: Dispose Entity
+	public void dispose() 
+	{
+		if (this.texture != null) {
+	        this.texture.dispose();
+	    }
+		if (this.shape != null) {
+	        this.shape.dispose();
+	    }
+		if (this.batch != null) {
+	        this.batch.dispose();
+	    }
+		if (this.boundingBox != null) {
+	        this.boundingBox = null;
+	    }
     }
-    
-    // Method: Get Entity ID
-    public int getEntityid()
-    {
-        return entityid;
-    }
+}
 ```

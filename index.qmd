@@ -2,142 +2,28 @@
 title: "Homepage"
 ---
 
-My name is Adrian Ian Wong Sye En. I am currently study in Year1 Applied AI course from SIT.
-
-Below is the module I have learnt throughout my journey in SIT:
-
-### **Web System**
-
-**Description:**
-
--   This course likely covers the fundamentals of web development, including both front-end and back-end technologies. You would learn about HTML, CSS, and JavaScript for building interactive and responsive user interfaces (UIs) on the web. Additionally, you might delve into server-side programming languages like PHP, Python (with frameworks like Django or Flask), or JavaScript (with Node.js) to build dynamic web applications.
-
-**Key Concepts:**
-
--   HTML (Hypertext Markup Language)
-
--   CSS (Cascading Style Sheets)
-
--   JavaScript (and possibly libraries/frameworks like React, Vue.js, or Angular)
-
--   Server-side programming (e.g., PHP, Python, Node.js)
-
--   Databases and data storage (e.g., SQL, NoSQL)
-
-**Skills Developed:**
-
--   Front-end development skills
-
--   Back-end development skills
-
--   Understanding of web architecture and protocols
-
--   Database management and integration
-
--   Problem-solving and debugging in web development contexts
-
-### **Machine Learning**
-
-**Description:**
-
--   Machine learning is a subfield of artificial intelligence (AI) that focuses on the development of algorithms and statistical models that enable computers to learn from and make predictions or decisions based on data. In this course, you would study various machine learning algorithms, techniques for data preprocessing and feature engineering, model evaluation, and practical applications of machine learning.
-
-**Key Concepts:**
-
--   Supervised learning (e.g., regression, classification)
-
--   Unsupervised learning (e.g., clustering, dimensionality reduction)
-
--   Model evaluation and validation
-
--   Feature engineering and selection
-
--   Deep learning and neural networks (if covered)
-
-**Skills Developed:**
-
--   Understanding of machine learning concepts and algorithms
-
--   Ability to implement machine learning models using libraries like scikit-learn or TensorFlow
-
--   Data preprocessing and feature engineering skills
-
--   Model evaluation and interpretation
-
-### **Linear Algebra**
-
-**Description:**
-
--   Linear algebra is a branch of mathematics that deals with vectors, matrices, and linear transformations. In the context of AI and machine learning, linear algebra plays a crucial role in understanding and implementing algorithms for data manipulation, optimization, and model representation.
-
-**Key Concepts:**
-
--   Vectors and matrices
-
--   Linear transformations
-
--   Eigenvalues and eigenvectors
-
--   Matrix operations (e.g., addition, multiplication)
-
--   Applications in solving systems of linear equations and optimization problems
-
-**Skills Developed:**
-
--   Understanding of fundamental linear algebra concepts
-
--   Ability to perform matrix operations and solve linear equations
-
--   Application of linear algebra in AI and machine learning contexts
-
-### **Discrete Math**
-
-**Description:**
-
--   Discrete mathematics is a branch of mathematics that deals with discrete structures and countable sets. In the context of computer science and AI, discrete mathematics provides the theoretical foundation for understanding algorithms, logic, and combinatorial problems.
-
-**Key Concepts:**
-
--   Set theory
-
--   Logic and propositional calculus
-
--   Combinatorics (e.g., permutations, combinations)
-
--   Graph theory
-
--   Number theory
-
-**Skills Developed:**
-
--   Ability to apply logical reasoning and mathematical proofs
-
--   Understanding of discrete structures and their properties
-
--   Problem-solving skills in combinatorial and graph-related problems
-
-### **Object-Oriented Programming**
-
-**Description:**
-
--   Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects," which can contain data and code to manipulate that data. In this course, you would learn about the principles of OOP, including encapsulation, inheritance, and polymorphism, and how to apply them in software development using object-oriented programming languages like Java, C++, or Python.
-
-**Key Concepts:**
-
--   Classes and objects
-
--   Encapsulation
-
--   Inheritance
-
--   Polymorphism
-
--   Abstraction
-
-**Skills Developed:**
-
--   Proficiency in designing and implementing object-oriented solutions to software problems
-
--   Understanding of class hierarchies and inheritance relationships
-
--   Ability to use OOP principles to create reusable and maintainable code
+:::: {.columns}
+::: {.column width="40%" style="padding-right: 20px;"}
+![](image/Adrian.jpg)
+:::
+::: {.column width="60%"  style="padding-left: 20px;"}
+My name is Adrian Ian Wong Sye En. I am 23 years old and originally from Malaysia. I have been living in Singapore for over five years, where I pursued my Diploma in Aeronautical Engineering at Singapore Polytechnic and now studying for a Bachelor's Degree in Applied Artificial Intelligence at the Singapore Institute of Technology.
+:::
+::::
+
+Here is a video introducing my polytechnic:
+```{r}
+knitr::include_url("https://www.youtube.com/watch?v=ddlp6JXcSF0")
+```
+
+Here is a video introducing my university:
+```{r}
+knitr::include_url("https://www.youtube.com/watch?v=H69fqdge9e4")
+```
+
+Exciting news! My university is soon opening its new campus in the Punggol Digital District:
+```{r}
+knitr::include_url("https://www.youtube.com/watch?v=AQMWEYkattE&t=273s")
+```
+
+ 
