@@ -10,13 +10,13 @@ Below are some notes I have made in both English and Chinese during my study of 
 
 # Chapter 1 Functions and Models 函數與模型
 
----
+------------------------------------------------------------------------
 
 ### 1.1 Four Ways to Represent a Function 四種表示函數的方法
 
 **Definition of Function 函數的定義**
 
-A function *$f$* is a rule that assign to each element $x$ in a set $D$ exactly one element, $f(x)$ in set $R.$
+A function $f$ is a rule that assign to each element $x$ in a set $D$ exactly one element, $f(x)$ in set $R.$
 
 函數 *f* 是一個為集合 D 中的每個元素 x 分配一個元素，即集合 R 中的 f(x) 的規則。
 
@@ -24,20 +24,20 @@ x: independent variable
 
 f(x): dependent variable
 
-set D: Domain 
+set D: Domain
 
 set R: Range
 
----
+------------------------------------------------------------------------
 
 **Representation of Functions 表示函數的方法**
 
-1. verbally 语言描述
-2. numerically 数值表示
-3. visually 图形表示
-4. algebraically 代数表示
+1.  verbally 语言描述
+2.  numerically 数值表示
+3.  visually 图形表示
+4.  algebraically 代数表示
 
----
+------------------------------------------------------------------------
 
 **Rule to Define Function 定義函數的規則**
 
@@ -47,9 +47,9 @@ A curve in the xy-plane is the graph of a function of x if and only if no vertic
 
 xy 平面中的曲線是 x 函數的圖形，當且僅當沒有垂直線與曲線多次相交時。
 
-![Vertical Line Test](image/vertical line test.png)
+![Vertical Line Test](image/vertical%20line%20test.png)
 
----
+------------------------------------------------------------------------
 
 **Piecewise Defined Function 分段定義函數**
 
@@ -73,7 +73,7 @@ $$
 \end{cases}
 $$
 
----
+------------------------------------------------------------------------
 
 **Even Function 偶數函數**
 
@@ -85,7 +85,7 @@ Its graph is symmetry respect to y-axis.
 
 其圖形是相對於y軸對稱的。
 
-![Even Fucntion](image/even function.png)
+![Even Fucntion](image/even%20function.png)
 
 **Odd Function 奇數函數**
 
@@ -97,9 +97,9 @@ Its graph is symmetry about the origin.
 
 其圖形是相對於原點對稱的。
 
-![Odd function](image/odd function.png)
+![Odd function](image/odd%20function.png)
 
----
+------------------------------------------------------------------------
 
 **Increasing Function 遞增函數**
 
@@ -107,7 +107,7 @@ A function $f$ is increasing on an interval $I$ if $f(x_1)<f(x_2), x_1<x_2$ in $
 
 如果在 $I$ 中 $x_1<x_2$，且$f(x_1)<f(x_2)$，則函數f 在區間 $I$ 上遞增。
 
-![Increasing Fucntion](image/increasing function.jpg)
+![Increasing Fucntion](image/increasing%20function.jpg)
 
 **Decreasing Function 遞減函數**
 
@@ -115,6 +115,6 @@ A function $f$ is decreasing on an interval $I$ if $f(x_1)>f(x_2), x_1<x_2$ in $
 
 如果在 $I$ 中 $x_1<x_2$，且$f(x_1)>f(x_2)$，則函數f 在區間 $I$ 上遞減。
 
-![Decreasing Function](image/decreasing function.png)
+![Decreasing Function](image/decreasing%20function.png)
 
----
+------------------------------------------------------------------------

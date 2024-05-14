@@ -4,6 +4,50 @@ title: "Project"
 
 Last trimester, I have done project about Object Oriented Programming that make the game.
 
-Below is some code and image from the project:
+Below is some code from the project:
 
+``` java
+public abstract class Entity 
+{
+    // Attributes
+    private int entityid;
+    private float posx;
+    private float posy;
+    private float speed;
+    private Texture texture;
+    private float width;
+    private float height;
+    private Vector2 direction;
+    private Rectangle boundingBox;
+    private SpriteBatch batch;
+    private ShapeRenderer shape;
 
+    // Constructor
+    public Entity(int entityid, float posx, float posy, float speed, String texturePath, float width, float height) 
+    {
+        this.entityid = entityid;
+        this.posx = posx;
+        this.posy = posy;
+        this.speed = speed;
+        this.texture = new Texture (Gdx.files.internal(texturePath));
+        this.width = width;
+        this.height = height;
+        float randomAngle = MathUtils.random(0f, MathUtils.PI2);
+        this.direction = new Vector2(MathUtils.cos(randomAngle), MathUtils.sin(randomAngle));
+        this.boundingBox = new Rectangle(this.getPosx(), this.getPosy(), this.getWidth(), this.getHeight());
+        this.batch = new SpriteBatch();
+        this.shape = new ShapeRenderer();
+    }
+
+    // Method: Set Entity ID
+    public void setEntityid(int entityid)
+    {
+        this.entityid = entityid;
+    }
+    
+    // Method: Get Entity ID
+    public int getEntityid()
+    {
+        return entityid;
+    }
+```
