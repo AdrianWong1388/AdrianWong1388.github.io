@@ -1,0 +1,9 @@
+---
+title: "Project"
+---
+
+Last trimester, I have done project about Object Oriented Programming that make the game.
+
+Below is some code and image from the project:
+
+
