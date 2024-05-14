@@ -12,18 +12,22 @@ My name is Adrian Ian Wong Sye En. I am 23 years old and originally from Malaysi
 ::::
 
 Here is a video introducing my polytechnic:
-```{r}
-knitr::include_url("https://www.youtube.com/watch?v=ddlp6JXcSF0")
-```
+
+<div style="text-align: center;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ddlp6JXcSF0" frameborder="0" allowfullscreen></iframe>
+</div>
 
 Here is a video introducing my university:
-```{r}
-knitr::include_url("https://www.youtube.com/watch?v=H69fqdge9e4")
-```
+
+<div style="text-align: center;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/H69fqdge9e4" frameborder="0" allowfullscreen></iframe>
+</div>
 
 Exciting news! My university is soon opening its new campus in the Punggol Digital District:
-```{r}
-knitr::include_url("https://www.youtube.com/watch?v=AQMWEYkattE&t=273s")
-```
+
+<div style="text-align: center;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AQMWEYkattE" frameborder="0" allowfullscreen></iframe>
+</div>
+
 
  
