@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Homepage",
+    "section": "",
+    "text": "My name is Adrian Ian Wong Sye En. I am currently study in Year1 Applied AI course from SIT."
+  },
+  {
+    "objectID": "hobby.html",
+    "href": "hobby.html",
+    "title": "Hobby",
+    "section": "",
+    "text": "My hobby is studying mathematics.\nAt the moment, I am self-studying calculus and linear algebra, and I plan to study real analysis and complex analysis afterward.\nBelow are some notes I have made in both English and Chinese during my study of calculus:\n\nChapter 1 Functions and Models 函數與模型\n\n\n1.1 Four Ways to Represent a Function 四種表示函數的方法\nDefinition of Function 函數的定義\nA function \\(f\\) is a rule that assign to each element \\(x\\) in a set \\(D\\) exactly one element, \\(f(x)\\) in set \\(R.\\)\n函數 f 是一個為集合 D 中的每個元素 x 分配一個元素，即集合 R 中的 f(x) 的規則。\nx: independent variable\nf(x): dependent variable\nset D: Domain\nset R: Range\n\nRepresentation of Functions 表示函數的方法\n\nverbally 语言描述\nnumerically 数值表示\nvisually 图形表示\nalgebraically 代数表示\n\n\nRule to Define Function 定義函數的規則\nVertical Line Test 垂線測試\nA curve in the xy-plane is the graph of a function of x if and only if no vertical line intersects the curve more than once.\nxy 平面中的曲線是 x 函數的圖形，當且僅當沒有垂直線與曲線多次相交時。\n\n\n\nVertical Line Test\n\n\n\nPiecewise Defined Function 分段定義函數\nA function defined by different formulas in different parts of their domains.\n在域的不同部分用不同公式定義的函數。\n\\[\nf(x) = \\begin{cases}\n    1-x, & \\text{if } x \\leq 0 \\\\\n    x^2, & \\text{if } x &gt; 0\n\\end{cases}\n\\]\nAbsolute Value 絕對值\n\\[\n|a| = \\begin{cases}\n     a, & \\text{if } x \\geq 0 \\\\\n    -a, & \\text{if } x &lt; 0\n\\end{cases}\n\\]\n\nEven Function 偶數函數\nA function \\(f\\) satisfies \\(f(-x)=f(x)\\) for every element \\(x\\) at its domain.\n域中每個元素 \\(x\\) 都滿足 \\(f(-x)=f(x)\\) 的函數。\nIts graph is symmetry respect to y-axis.\n其圖形是相對於y軸對稱的。\n\n\n\nEven Fucntion\n\n\nOdd Function 奇數函數\nA function \\(f\\) satisfies \\(f(-x)=-f(x)\\) for every element \\(x\\) at its domain.\n域中每個元素 \\(x\\) 都滿足 \\(f(-x)=-f(x)\\) 的函數。\nIts graph is symmetry about the origin.\n其圖形是相對於原點對稱的。\n\n\n\nOdd function\n\n\n\nIncreasing Function 遞增函數\nA function \\(f\\) is increasing on an interval \\(I\\) if \\(f(x_1)&lt;f(x_2), x_1&lt;x_2\\) in \\(I\\).\n如果在 \\(I\\) 中 \\(x_1&lt;x_2\\)，且\\(f(x_1)&lt;f(x_2)\\)，則函數f 在區間 \\(I\\) 上遞增。\n\n\n\nIncreasing Fucntion\n\n\nDecreasing Function 遞減函數\nA function \\(f\\) is decreasing on an interval \\(I\\) if \\(f(x_1)&gt;f(x_2), x_1&lt;x_2\\) in \\(I\\).\n如果在 \\(I\\) 中 \\(x_1&lt;x_2\\)，且\\(f(x_1)&gt;f(x_2)\\)，則函數f 在區間 \\(I\\) 上遞減。\n\n\n\nDecreasing Function"
+  },
+  {
+    "objectID": "project.html",
+    "href": "project.html",
+    "title": "Project",
+    "section": "",
+    "text": "Last trimester, I have done project about Object Oriented Programming that make the game.\nBelow is some code and image from the project:"
+  }
+]
