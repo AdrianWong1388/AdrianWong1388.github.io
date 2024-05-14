@@ -7,7 +7,19 @@ title: "Homepage"
 ![](image/Adrian.jpg)
 :::
 ::: {.column width="60%"  style="padding-left: 20px;"}
-My name is Adrian Ian Wong Sye En. I am 23 years old and originally from Malaysia. I have been living in Singapore for over five years, where I pursued my Diploma in Aeronautical Engineering at Singapore Polytechnic and now studying for a Bachelor's Degree in Applied Artificial Intelligence at the Singapore Institute of Technology.
+
+Name: Adrian Ian Wong Sye En
+
+Age: 23
+
+Origin: Malaysia
+
+Time Stay in SG: 5 years ++
+
+Previous Study: Diploma in Aeronautical Engineering
+
+Current Study: Bachelor's Degree in Applied Artificial Intelligence
+
 :::
 ::::
 
